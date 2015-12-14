@@ -1,6 +1,11 @@
 var products = ["Stamford T-Shirt", "Stamford Notebook",  "Stamford Wristband"];
 var price = [10, 5, 1];
 var total = 0;
+var name = 'Thiti';
+var greeting = 'Good morning, ' + name + '. Thank you for your order!';
+
+var eleMsg = document.getElementById('greetingMessage');
+eleMsg.innerHTML = greeting;
 
 var productList = document.getElementById("productList");
 productList.innerHTML +="<li>" +products[0]+ ":$" + price[0] + "</li>";
