@@ -1,0 +1,24 @@
+body{
+	background-image:url(../images/tembackground.jpg);
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:cover;
+}
+
+.city{
+	color:#00F;
+	font-size:36px;
+	padding-left:8px;
+	padding-right:8px;
+	text-align:center;
+}
+
+.text{
+	color:#000;
+	font-size:42px;
+	padding-left:8px;
+	padding-right:8px;
+	text-align:center;
+}
+
+
