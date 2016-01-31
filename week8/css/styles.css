@@ -1,0 +1,52 @@
+body{
+	background-repeat:no-repeat;
+    background-position:top center;
+	background-color:pink;
+}
+
+.consertname{
+	display:block;
+	color:#F0F;
+	font-size:18px;
+}
+
+#spaceContainer{
+	display:inline-block;
+	width:10%;
+	margin:25px;
+}
+
+.seatings, .result{
+	color:blue;
+	display:inline-block;
+	margin-bottom:2%;
+	margin-top:2%;
+}
+
+.seatings{
+	color:#F39;
+}
+
+
+
+#ErrorText{
+     color:red;
+}
+
+#congratsText{
+	color:yellow;
+}
+
+.button {
+	color:#F6C;
+	font-weight:bold;
+	background-color:#F0C;
+	border-radius:7px;
+	padding-left: 15px;
+	padding-right:15px;
+	border-color:#FFF;
+	border-style:outset;
+	font-size:22px;
+	position:absolute;
+	
+}
