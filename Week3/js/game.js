@@ -1,5 +1,6 @@
 var game = {
-	answer: 50, 
+	answer:Math.floor(Math.random()*101), 
+	
 	init: function() {
 		var self = this;
 		
@@ -62,18 +63,37 @@ var game = {
 			self.click(0);
 		}, false);
 
-	
 		var ele = document.getElementById("guess");
-		ele.addEventListener("click", this.checkAnswer, false);
+		ele.addEventListener("click",function(){
+			self.checkAnswer(self);
+			}, false);  
 	},
 	click: function(value) {
 		console.log(value + " clicked.");
 		var userValueEle = document.getElementById("userValue");
 		userValueEle.value += value;
 	},
-	checkAnswer: function() {
-		alert("This is not correct! Try again. ");
+	
+	clear:function(){
+		var userValueEle = document.getElementById("userValue");
+		userValueEle.value="";
+		},
+		
+	checkAnswer: function(self) {
+		var userValueEle = document.getElementById("userValue");
+		if(self.answer == userValueEle.value){
+			alert("Correct!" + "\n" +"Refresh to try a new number!");			
+		} else{
+				
+			if(self.answer > userValueEle.value){
+				alert("Guessing number is less than the correct number");
+			} else{
+				alert("Guessing number is more than the correct number");
+			}
+		}
+		userValueEle.value="";
 	}
+	
 };
 
 game.init();
