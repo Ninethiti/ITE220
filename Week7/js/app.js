@@ -1,5 +1,5 @@
 //Thiti and Muhammad
-//got the clesius and farenheign button from alvin
+//got the clesius and farenheign button help from alvin
 $(function(){
 
 selectedUnit = "";
@@ -24,7 +24,7 @@ e.preventDefault();
 var city = this.text.toLowerCase();
 $.ajax({
 type: 'GET',
-url: 'http://api.openweathermap.org/data/2.5/weather?q=' + city + selectedUnit + '&appid=2de143494c0b295cca9337e1e96b00e0',
+url: 'http://api.openweathermap.org/data/2.5/weather?q=' + city + selectedUnit + '&appid=87a77d1076a72b57a04a29a5200ffc1e',
 beforeSend: function(){ 
 } ,
 error: function(){
